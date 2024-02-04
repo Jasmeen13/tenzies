@@ -1,0 +1,33 @@
+
+.face{
+    display: grid;
+    grid-template-areas: 
+    "a b c"
+    "e f g"
+    "h i j";
+}
+.pip{
+    width: 10px;
+    height: 10px;
+    margin:2px;
+    border-radius: 50%;
+    background-color: black;
+}
+.pip:nth-child(2){
+    grid-area:j;
+}
+.pip:nth-child(3){
+    grid-area:c;
+}
+.pip:nth-child(4){
+    grid-area:h;
+}
+.pip:nth-child(5){
+    grid-area:e;
+}
+.pip:nth-child(6){
+    grid-area:g;
+}
+.pip:nth-child(odd):last-child{
+    grid-area:f;
+}
