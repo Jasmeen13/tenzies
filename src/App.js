@@ -47,6 +47,7 @@ function App() {
       const allEqual = allDice.every(dice=>first === dice.value)
       
       allHeld && allEqual && setGameWon(oldValue => !oldValue);
+      
   },[allDice])
 
   const allDiceComponent = allDice.map(dice=>{
